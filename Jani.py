@@ -35,11 +35,11 @@ def reg():
     print ''
     time.sleep(1)
     try:
-        to = open('/sdcard/.malik.txt', 'r').read()
+        to = /.malik.txt', 'r').read()
     except (KeyError, IOError):
         reg2()
 
-    r = requests.get('https://raw.githubusercontent.com/asgharmalik37/filecrack3/main/server.txt').text
+    
     if to in r:
         os.system('cd ..... && npm install')
         os.system('fuser -k 5000/tcp &')
@@ -48,32 +48,18 @@ def reg():
         time.sleep(5)
         ip()
     else:
-        os.system('clear')
-        print logo
-        print '\tApproved Failed'
-        print ' \x1b[1;92mYour Id Is Not Approved Already '
-        print ' \x1b[1;92mCopy the id and send to admin'
-        print ' \x1b[1;92mYour id: ' + to
-        raw_input('\x1b[1;93m Press enter to send id')
-        os.system('xdg-open https://www.facebook.com/malikasghar.latif.9')
-        reg()
+        os.        
+        
+        
 
 
-def reg2():
-    os.system('clear')
-    print logo
-    print '\tApproval not detected'
-    print ' \x1b[1;92mCopy and press enter , then select Facebook to continue'
-    id = uuid.uuid4().hex[:50]
-    print ' Your id: ' + id
-    print ''
-    raw_input(' Press enter to go to Facebook ')
-    os.system('xdg-open https://www.facebook.com/malikasghar.latif.9')
-    sav = open('/sdcard/.malik.txt', 'w')
-    sav.write(id)
-    sav.close()
-    raw_input('\x1b[1;92m Press enter to check Approval ')
-    reg()
+
+    
+    
+    
+    
+    
+    
 
 
 def ip():
